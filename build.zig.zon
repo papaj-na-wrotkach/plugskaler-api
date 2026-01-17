@@ -1,9 +1,8 @@
 .{
-	// .name = .plugskaler_api,
-	.name = "plugskaler-api",
+	.name = .plugskaler_api,
 	.version = "0.0.1",
-	// .fingerprint = 0x2b766224aed9bb6,
-	.minimum_zig_version = "0.14.1",
+	.fingerprint = 0xe38548810f2121ec,
+	.minimum_zig_version = "0.14.0",
 	.paths = .{
 		"build.zig",
 		"build.zig.zon",
