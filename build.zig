@@ -8,4 +8,7 @@ pub fn build(b: *std.Build) void {
 		.target = target,
 		.optimize = optimize,
 	});
+
+	const install_step = b.getInstallStep();
+	install_step.dependOn(&b.addInstallHeaderFile(b.path("plgugskaler-api.h"), b.pathJoin(&[_][]const u8{ "plugskaler", "plugiskaler-api.h", })).step);
 }
